@@ -12,7 +12,7 @@ steps:
     entrypoint: bash
     args: ["-c", "npm run build"]
     env:
-      - NEXT_PUBLIC_API_URL=${_API_URL}
+      - NEXT_PUBLIC_API_URL=https://inu-dining-api.duckdns.org
 
   # 3️⃣ Sync the generated /out directory to the website bucket
   - name: gcr.io/cloud-builders/gsutil
